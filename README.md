@@ -1,5 +1,4 @@
 # Bitsy-Game-Final
-A Bitsy game for my Game 110 class.
 Working Title: **"Coversations With Spirits"**
 
 I am referencing the anime *Mob Psycho 100* specifically the spirit aspect of the show. The show has a varity of spirit interactions and characters, so I wanted my game to include seeing and talking to spirits.
