@@ -1,4 +1,4 @@
-# Bitsy-Game-Final
+# Bitsy-Game
 Working Title: **"Conversations With Spirits"**
 
 I am referencing the anime *Mob Psycho 100*, specifically its spiritual aspect. The show features a variety of spirit interactions and characters, so I wanted my game to include the ability to see and talk to spirits.
