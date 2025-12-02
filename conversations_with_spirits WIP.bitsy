@@ -491,6 +491,19 @@ SPR f
 00000000
 NAME Letter 2
 
+SPR g
+00000000
+00000000
+00111000
+00111000
+00010000
+00111000
+01111100
+00101000
+NAME Person 2
+DLG 7
+POS 1 10,8
+
 ITM 0
 00000000
 00011000
@@ -553,7 +566,19 @@ DLG 3
 NAME Ghost 1 dialog
 
 DLG 4
-Why are you here?{pg}You must leave. We don't want you here.
+"""
+{
+  - ghost2count >= 1 ?
+    Oh...hi...
+  - else ?
+    Why are you here?{pg}You must leave. We don't want you here.
+}{
+  - ghost2count == 1 ?
+    My friend doesn' want no {shk}humans{/shk} here. {pg}He says it's bad here.
+  - else ?
+
+}{ghost2count = ghost2count + 1}
+"""
 NAME Ghost 2 dialog
 
 DLG 5
@@ -567,7 +592,7 @@ DLG 5
   - ghost3count == 1 ?
 
   - else ?
-    I won't leave!{pg}
+    {pg}I won't leave!{pg}
 }{
   - ghost3count == 2 ?
     why? well because...{pg}{shk}THEY SOLD ME EXPIRED FOOD!!!!{/shk}{pg}{shk}AND I DIED!!!!!{/shk}
@@ -592,6 +617,17 @@ DLG 6
 """
 NAME Woman dialog
 
+DLG 7
+"""
+{
+  - person2count >= 1 ?
+    Hi again!{pg}It's a nice day out!{pg}I wish the store was open. I am craving some ice cream with this weather.
+  - else ?
+    Hi
+}{person2count = person2count + 1}
+"""
+NAME Person 2 dialog
+
 VAR Womancount
 0
 
@@ -599,6 +635,12 @@ VAR ghost3count
 0
 
 VAR ghostcount
+0
+
+VAR ghost2count
+0
+
+VAR person2count
 0
 
 TUNE 1
