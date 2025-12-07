@@ -504,6 +504,29 @@ NAME Person 2
 DLG 7
 POS 1 10,8
 
+SPR h
+01111110
+01111110
+01111110
+01111110
+00000000
+00111100
+00011000
+00000000
+DLG 8
+POS 0 4,6
+
+SPR i
+00000000
+11111111
+00000000
+00000000
+00000000
+00000000
+01111110
+01111110
+POS 0 4,5
+
 ITM 0
 00000000
 00011000
@@ -537,7 +560,7 @@ Guh??...Sorry...You scared me!
 NAME cat dialog
 
 DLG 1
-"Before the end of the day, make sure to speak with the owner of the supermarket. {pg}She is having trouble with a spirit.
+Boss: "Before the end of the day, make sure to speak with the owner of the supermarket. {pg}She is having trouble with a spirit."
 NAME Letter
 
 DLG 2
@@ -628,6 +651,15 @@ DLG 7
 """
 NAME Person 2 dialog
 
+DLG 8
+"""
+{cycle
+  - This is my desk.
+  - I really should ask for a softer chair.
+}
+"""
+NAME sprite h dialog
+
 VAR Womancount
 0
 
@@ -644,7 +676,7 @@ VAR person2count
 0
 
 TUNE 1
-4l,0,0,0,s,0,3l,0,0,0,2s,0,2m,0,2r,0
+l,0,2l,0,s,0,3l,0,0,0,2s,0,2m,0,2r,0
 16m2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 >
 3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
