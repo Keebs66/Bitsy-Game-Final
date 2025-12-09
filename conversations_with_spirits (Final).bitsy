@@ -62,7 +62,7 @@ PAL 0
 TUNE 1
 
 ROOM 2
-0,0,b,0,0,b,0,0,0,0,b,0,0,b,0,0
+0,0,b,0,0,b,0,0,0,0,b,b,b,b,0,0
 0,0,b,0,0,b,0,0,0,0,b,0,0,b,0,0
 0,b,b,0,0,b,b,b,b,b,b,0,0,b,b,0
 0,b,0,0,0,0,0,0,0,0,0,0,0,0,b,0
@@ -156,7 +156,7 @@ ROOM 6
 0,0,b,b,b,b,b,b,b,b,b,b,b,b,0,0
 0,0,b,0,0,0,0,0,0,0,0,0,0,b,0,0
 b,b,b,0,0,0,0,0,0,0,0,0,0,b,b,b
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
 b,b,b,0,0,0,0,0,0,0,0,0,0,b,b,b
 0,0,b,0,0,0,0,0,0,0,0,0,0,b,0,0
 0,0,b,0,0,0,0,0,0,0,0,0,0,b,0,0
@@ -616,7 +616,7 @@ DLG 4
     Why are you here?{pg}You must leave. We don't want you here.
 }{
   - ghost2count == 1 ?
-    My friend doesn' want no {shk}humans{/shk} here. {pg}He says it's bad here.
+    My friend doesn't want no {shk}humans{/shk} here. {pg}He says it's bad here.
   - else ?
 
 }{ghost2count = ghost2count + 1}
